@@ -12,7 +12,51 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
+  word = word.toLowerCase().trim()
+  let wordArr = Array.from(word)
+  if (wordArr[0] == "a" || wordArr[0] == "e" || wordArr[0] == "i" || wordArr[0] == "o" || wordArr[0] == "u") {
+    wordArr.push('yay')
+    return wordArr.join('')
+  }
 
+
+  for (let i = 0; i < wordArr.length; i++) {
+    // console.log("wordArr: ", wordArr, i)
+  if (wordArr[0] == "a" || wordArr[0] == "e" || wordArr[0] == "i" || wordArr[0] == "o" || wordArr[0] == "u") {
+      wordArr.push('ay')
+      return wordArr.join('')
+    } else {
+      let first = wordArr.splice(0,1)
+      
+      wordArr.push(first)
+      
+    }
+  }
+
+
+  // if (first == "a" || first == "e" ||first == "i" ||first == "o" ||first == "u") {
+  //   wordArr.push("yay")
+  // } else {
+  //   wordArr.shift()
+  //   wordArr.push(first)
+  //   wordArr.push("ay")
+  // }
+
+  // if (consonants > 1){
+  //   wordArr.push("ay")
+  // } else {
+  //   wordArr.shift()
+  //   wordArr.push(first)
+  //   wordArr.push("yay")
+  // }
+
+  // let finalWord = ''
+  // console.log(wordArr)
+  // for (let i = 0; i < wordArr.length; i++) {
+  //   finalWord += wordArr[i]
+  // }
+
+  // return finalWord
   // Your code here
 
 }
@@ -58,7 +102,13 @@ if (typeof describe === 'function') {
 
 
 
-
+// let myArr = [1,2,3]
+// let total = 0
+// for (let i = 0; i < myArr.length; i++){
+//   myArr[i] = myArr[i]**2
+//   total += myArr[i]
+// }
+// return total
 
 
 // **********
