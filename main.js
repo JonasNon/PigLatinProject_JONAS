@@ -34,31 +34,6 @@ const pigLatin = (word) => {
   }
 
 
-  // if (first == "a" || first == "e" ||first == "i" ||first == "o" ||first == "u") {
-  //   wordArr.push("yay")
-  // } else {
-  //   wordArr.shift()
-  //   wordArr.push(first)
-  //   wordArr.push("ay")
-  // }
-
-  // if (consonants > 1){
-  //   wordArr.push("ay")
-  // } else {
-  //   wordArr.shift()
-  //   wordArr.push(first)
-  //   wordArr.push("yay")
-  // }
-
-  // let finalWord = ''
-  // console.log(wordArr)
-  // for (let i = 0; i < wordArr.length; i++) {
-  //   finalWord += wordArr[i]
-  // }
-
-  // return finalWord
-  // Your code here
-
 }
 
 // the first function called in the program to get an input from the user
