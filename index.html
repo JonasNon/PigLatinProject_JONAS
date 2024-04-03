@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -12,8 +11,13 @@
     <form>
       <input id="user-input" type="text">
       <!-- How do you get this input sent to the pigLatin() function? -->
-      <button onclick="pigLatin()">Translate</button>
+      <label for="translate">Translate Button: </label>
+      <input name="translate" type="button" onclick="translateWord()"></input>      
+      <br>
+      <p>Translated Word: <p id="answer"></p></p>
     </form>  
     <hr/>
   </body>
+  <script src="./dom-scripts.js" defer></script>
+
 </html>
