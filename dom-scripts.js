@@ -1,8 +1,8 @@
 
 
 const pigLatin = () => {
-  // word = document.getElementById("user-input").value
-  word = document.getElementById("input").value
+  word = document.getElementById("user-input").value
+  // word = document.getElementById("input").value //for dynamic generatiom
 
   console.log(word)
   word = word.toLowerCase().trim()
@@ -35,55 +35,48 @@ const translateWord = () => {
 }
 
 
+//enable all of this to dynamically generate interface
 
-const enterPress = (key) =>  {
-  console.log(this)
+// let input = document.createElement("input")
 
-  if (Event.key == "Enter") {
-    console.log("pressed enter")
-  }
-}
-
-let input = document.createElement("input")
-
-const readyFunc = () => {
-  let newDiv = document.createElement('div')
-  document.getElementById("main").appendChild(newDiv)
-  newDiv.style.height = "100vh"
-  newDiv.style.width = "100vw"
-  newDiv.style.display = "flex"
-  newDiv.style.justifyContent = 'flex-start'
-  newDiv.style.alignItems = 'center'
-  newDiv.style.flexDirection = 'column'
-  let title = document.createElement('h1')
-  title.innerHTML = 'Pig Latin'
-  title.style.paddingTop = "5vh"
-  newDiv.appendChild(title)
+// const readyFunc = () => {
+//   let newDiv = document.createElement('div')
+//   document.getElementById("main").appendChild(newDiv)
+//   newDiv.style.height = "100vh"
+//   newDiv.style.width = "100vw"
+//   newDiv.style.display = "flex"
+//   newDiv.style.justifyContent = 'flex-start'
+//   newDiv.style.alignItems = 'center'
+//   newDiv.style.flexDirection = 'column'
+//   let title = document.createElement('h1')
+//   title.innerHTML = 'Pig Latin'
+//   title.style.paddingTop = "5vh"
+//   newDiv.appendChild(title)
   
-  input.type = "text"
-  input.style.width = '138px'
-  input.placeholder = "Translate!(Press Enter)"
-  input.id = "input"
-  // input.onkeydown = "enterPress(this)"
-  newDiv.appendChild(input)
-  let line = document.createElement('hr')
-  line.style.width = "100vw"
-  newDiv.appendChild(line)
-  let result = document.createElement('p')
-  result.id = "result"
-  newDiv.appendChild(result)
+//   input.type = "text"
+//   input.style.width = '138px'
+//   input.placeholder = "Translate!(Press Enter)"
+//   input.id = "input"
+//   // input.onkeydown = "enterPress(this)"
+//   newDiv.appendChild(input)
+//   let line = document.createElement('hr')
+//   line.style.width = "100vw"
+//   newDiv.appendChild(line)
+//   let result = document.createElement('p')
+//   result.id = "result"
+//   newDiv.appendChild(result)
 
 
 
-}
-readyFunc()
+// }
+// readyFunc()
 
 
-input.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    event.preventDefault();
+// input.addEventListener("keypress", function(event) {
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     event.preventDefault();
     
-    document.getElementById('result').innerHTML = pigLatin()
-  }
-});
+//     document.getElementById('result').innerHTML = pigLatin()
+//   }
+// });
